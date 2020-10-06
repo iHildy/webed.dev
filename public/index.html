@@ -93,24 +93,46 @@
         <main class="container mx-auto md:px-16">
 
             <header>
-                <h2 class="text-6xl font-extrabold">Library for <br> website development</h2>
-                <h3 class="text-3xl font-semibold">WebEd is the biggest library of tools for web developers.</h3>
-                <img src="img/undraw_static_website_0107.svg" alt="unDraw profolio img"><!-- Left -->
+                <div>
+                    <div class="float-left">
+                        <h2 class="text-6xl font-extrabold">Library for <br> website development</h2>
+                        <h3 class="text-3xl font-semibold">WebEd is the biggest library of tools for web developers.</h3>
+                    </div>
+
+                    <div class="float-right">
+                        <img src="img/undraw_static_website_0107.svg" alt="unDraw profolio img"><!-- Left -->
+                    </div>
             </header>
 
+            <div class="box pt-32">
+                <div class="box-sm red"></div>
+                <div class="box-sm orange"></div>
+                <div class="box-sm yellow"></div>
+                <div class="box-sm green"></div>
+                <div class="box-sm blue"></div>
+                <div class="box-sm purple"></div>
+            </div>
+
             <div>
-                <h4>Most Popular</h4>
+                <h4 class="text-3xl font-bold py-6">Most Popular</h4>
 
                 <div>
                     <!-- cards go here -->
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
                         <img src="img/CSS/bootstrap-banner.jpg" alt="Bootstrap banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/bootstrap-icon.jpg" alt="Bootstrap Icon" class="rounded-full -mt-20 icon rounded-t-full border-2">
+                            <img src="img/css/bootstrap-icon.jpg" alt="Bootstrap Icon" class="rounded-full -mt-20 w-32 rounded-t-full border-2 relative">
+
                             <span class="font-bold text-2xl hover:text-blue-600"><a target="_blank" href="https://getbootstrap.com/">Bootstrap</a></span>
+
                             <span class="bg-green-400 rounded-full px-2 float-right text-green-900"><i class="fas fa-check"></i><span class="font-bold pl-1">Verified</span></span>
+
                             <span class="block text-sm">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open
                             source toolkit.</span>
+                        </div>
+                        <div>
+                            <span class="bg-green-400 rounded-full px-2 text-green-900 "><i class="fas fa-check"></i><span
+                                    class="font-bold pl-1">Verified</span></span>
                         </div>
                     </div>
                 </div>

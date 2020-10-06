@@ -20,3 +20,12 @@
     display: block;
 }    
     
+.icon {
+    width: 8em;
+    height: 8em;
+    z-index: 3;
+}
+
+.banner {
+    z-index: 1;
+}

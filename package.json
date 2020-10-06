@@ -1,0 +1,24 @@
+{
+  "name": "webed.dev",
+  "version": "1.0.0",
+  "description": "A website with almost all recources any beginner to advanced web developer could ever need. [IN PROGRESS]",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iHildy/webed.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iHildy/webed.dev/issues"
+  },
+  "homepage": "https://github.com/iHildy/webed.dev#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "tailwindcss": "^1.8.10"
+  }
+}

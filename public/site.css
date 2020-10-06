@@ -1,0 +1,22 @@
+.text-blue {
+  --text-opacity: 1;
+  color: #00b0ff;
+  color: rgba(0, 176, 255, var(--text-opacity));
+}
+
+.bg-blue {
+  --text-opacity: 1;
+  background-color: #00b0ff;
+  background-color: rgba(0, 176, 255, var(--bg-opacity));
+}
+
+.bg-gray {
+    --bg-opacity: 1;
+    background-color: #3f3d56;
+    background-color: rgba(63, 61, 86, var(--bg-opacity))
+}
+
+.active{
+    display: block;
+}    
+    

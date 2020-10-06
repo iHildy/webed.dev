@@ -5,3 +5,4 @@ Accent color = #00b0ff
 To-do:
 Add toasts to language icons
 replace icons with words on mobile
+have verified icon expand to say "{checkmark} icon"

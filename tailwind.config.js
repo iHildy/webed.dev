@@ -122,6 +122,10 @@ module.exports = {
           '800': '#61334c',
           '900': '#472a3b',
         },
+        carbon: '#FE4C54',
+        gray: '#3f3d56',
+        blue: '#00b0ff',
+        yogurt: '#e2e8f0',
       },
     spacing: {
       px: '1px',

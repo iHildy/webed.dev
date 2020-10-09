@@ -12,20 +12,89 @@
     <link rel="stylesheet" href="site.css">
 
     <!-- scripts -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://kit.fontawesome.com/86ebfd8f38.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
-<body class="text-lightslategrey-800 bg-gray-300">
+<body class="text-yogurt">
 
     <!-- Content Wrapper -->
     <div>
-        <!-- Start nav -->
-        <div class="bg-gray p-6">
+        <!-- Start nav -->  
+        <div class="bg-gray">
+            <nav class="nav flex flex-wrap items-center justify-between px-4">
+                <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+                    <svg class="fill-current h-8 mr-2 w-8" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 716 895">
+                        <path d="M357.776 0l357.77 178.885v536.657l-357.77 178.89L0 715.542V178.885"></path>
+                        <path class="text-yogurt fill-current"
+                            d="M357.776 804.982l268.32-134.16v-178.89l-89.44-44.72 89.44-44.72V223.606L357.776 89.442v626.1l-178.89-89.44V178.885l-89.443 44.721v447.216l268.333 134.16z">
+                        </path>
+                        <path
+                            d="M447.216 670.822l89.44-44.72v-89.45l-89.44-44.72v178.89zM447.216 402.492l89.44-44.721v-89.443l-89.44-44.722">
+                        </path>
+                    </svg>
+                    <span class="font-semibold text-xl tracking-tight">WebEd</span>
+                </div>
+            
+                <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+                <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+                    <span class="navicon flex items-center relative"></span>
+                </label>
+            
+                <ul class="menu md:border-none md:flex justify-end list-rest m-0 w-full md:w-auto sm:grid sm:grid-cols-4">
+
+                    <div>
+                        <div>
+                            <a href="#">
+                                <span><img src="img/javascript-4.svg" alt="JavaScript"></span>
+                            </a>
+                            <a href="#">
+                                <span><img src="img/javascript-4.svg" alt="JavaScript"></span>
+                            </a>
+                            <a href="#">
+                                <span><img src="img/javascript-4.svg" alt="JavaScript"></span>
+                            </a>
+                            <a href="#">
+                                <span><img src="img/javascript-4.svg" alt="JavaScript"></span>
+                            </a>
+                            <a href="#">
+                                <span><img src="img/javascript-4.svg" alt="JavaScript"></span>
+                            </a>
+                            <a href="#">
+                                <span><img src="img/javascript-4.svg" alt="JavaScript"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- <li class="">
+                        <a href="/"
+                            class="inline md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
+                    </li>
+            
+                    <li class="">
+                        <a href="/about/"
+                            class="inline md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+                    </li>
+            
+                    <li class="">
+                        <a href="/blog/"
+                            class="inline md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Blog</a>
+                    </li> -->
+            
+                </ul>
+            </nav>
+
+            
+            <div class="pt-5 bg-white"></div>
+            
             <nav class="flex-row md:justify-between grid grid-cols-12">
                 <div class="col-span-3">
-                    <h1><i class="fas fa-code text-gray-300 fa-3x"></i><a href="#" class="ml-3 -mt-16 font-bold text-2xl bg-gray-300 py-2 px-4 rounded-full">WebEd</a></h1>
+                    <h1><i class="fas fa-code fa-3x"></i><a href="#" class="ml-3 -mt-16 font-bold text-2xl bg-gray-300 py-2 px-4 rounded-full">WebEd</a></h1>
                 </div>
 
-                <div class="text-gray-300 font-semibold">
+                <div class="font-semibold">
                     <ul>
                       <div class="">
                         <!-- right -->
@@ -88,12 +157,19 @@
                             </a>
                         </li>
                       </div>
-                      <button type="button" name="button" class="text-gray-200">
-                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0">
-                        </svg>
-                      </button>
                     </ul>
+                </div>
+                <div class="hidden sm:hidden">
+                    <div class="px-2 pt-2 pb-3">
+                        <a href="#"
+                            class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Dashboard</a>
+                        <a href="#"
+                            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Team</a>
+                        <a href="#"
+                            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Projects</a>
+                        <a href="#"
+                            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Calendar</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -102,7 +178,7 @@
         <!-- Start Main -->
         <main class="container mx-auto md:px-16">
 
-            <header class="pt-16">
+            <header class="pt-16 text-gray">
                 <div class="grid grid-cols-6">
                     <div class="float-left col-span-3">
                         <h2 class="text-5xl font-extrabold">Library for <br> web developers</h2>
@@ -127,14 +203,17 @@
             </div>
 
             <div>
-                <h4 class="text-3xl font-bold py-6">Most Popular</h4>
+                
+                <div>
+                    <h4 class="text-3xl font-bold py-6 text-gray">Most Popular</h4>
+                </div>
 
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-rows-1 gap-5">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
                     <!-- cards go here -->
                     <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
-                        <img src="img/CSS/bootstrap-banner.jpg" alt="Bootstrap banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <img src="img/bootstrap-banner.jpg" alt="Bootstrap banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/bootstrap-icon.jpg" alt="Bootstrap Icon" class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
+                            <img src="img/bootstrap-icon.jpg" alt="Bootstrap Icon" class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
 
                             <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank" href="https://getbootstrap.com/">Bootstrap</a></span>
 
@@ -149,9 +228,9 @@
 
 
                     <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
-                        <img src="img/CSS/tailwind-banner.jpg" alt="Tailwind banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <img src="img/tailwind-banner.jpg" alt="Tailwind banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/tailwind-icon.png" alt="Tailwind Icon"
+                            <img src="img/tailwind-icon.png" alt="Tailwind Icon"
                                 class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
 
                             <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank"
@@ -168,9 +247,9 @@
 
 
                     <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
-                        <img src="img/CSS/netlify-banner.png" alt="Netlify banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <img src="img/netlify-banner.png" alt="Netlify banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/netlify-icon.jpg" alt="Netlify icon"
+                            <img src="img/netlify-icon.jpg" alt="Netlify icon"
                                 class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
 
                             <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank"
@@ -186,9 +265,9 @@
 
 
                     <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
-                        <img src="img/CSS/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/csstricks-icon.jpg" alt="CSSTricks Icon"
+                            <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
                                 class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
 
                             <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank"
@@ -204,9 +283,9 @@
 
 
                     <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
-                        <img src="img/CSS/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/csstricks-icon.jpg" alt="CSSTricks Icon"
+                            <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
                                 class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
 
                             <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank" href="https://css-tricks.com/">CSS
@@ -223,14 +302,48 @@
 
 
                     <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
-                        <img src="img/CSS/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
-                            <img src="img/css/csstricks-icon.jpg" alt="CSSTricks Icon"
+                            <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
                                 class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
 
                             <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank" href="https://css-tricks.com/">CSS
                                     Tricks</a></span>
 
+                            <span class="block text-sm">Quickly learn how to design and customize webpages with the aricles on CSS
+                                Tricks.</span>
+                        </div>
+                        <div>
+                            <span class="bg-green-400 rounded-full px-3 text-green-900 absolute top-0 right-0 m-3 float-right"><i
+                                    class="fas fa-check p-1"></i> <!-- <span class="font-bold">Verified</span> --> </span>
+                        </div>
+                    </div>
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                        <img src="img/trello-banner2.png" alt="CSSTricks banner" class="w-full h-28 sm:h-40 ">
+                        <div class="m-4">
+                            <!-- <img src="img/trello-icon.png" alt="CSSTricks Icon"
+                                class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4"> -->
+                    
+                            <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank" href="https://trello.com/">Trello</a></span>
+                    
+                            <span class="block text-sm">Trello is the project management tool that moves work forward. Sign Up Today!</span>
+
+                            <span><a class="hover:text-blue-400 text-gray-100 text-xs bottom-0.right-0 float-right" href="https://www.carbonads.net/open-source">ADS VIA CARBON</a></span>
+                        </div>
+                        <div>
+                            <span class="bg-carbon rounded-full px-3 text-red-900 absolute top-0 right-0 m-3 float-right"><i
+                                    class="fas fa-check p-1"></i> <!-- <span class="font-bold">Verified</span> --> </span>
+                        </div>
+                    </div>
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                        <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
+                        <div class="m-4">
+                            <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
+                                class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
+                    
+                            <span class="font-bold text-2xl hover:text-blue-400"><a target="_blank" href="https://css-tricks.com/">CSS
+                                    Tricks</a></span>
+                    
                             <span class="block text-sm">Quickly learn how to design and customize webpages with the aricles on CSS
                                 Tricks.</span>
                         </div>

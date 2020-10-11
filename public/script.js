@@ -1,8 +1,9 @@
-function classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items')
-
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
-
-document.querySelector('.Navbar__Link-toggle')
-    .addEventListener('click', classToggle);
+gsap.to("#title", {
+    duration: 1,
+    text: {
+        value: "Library for web developers",
+        newClass: "class2",
+        delimiter: " ",
+        delay: 1
+    }
+});

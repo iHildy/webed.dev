@@ -15,6 +15,8 @@
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://kit.fontawesome.com/86ebfd8f38.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body class="text-yogurt">
@@ -175,13 +177,27 @@
         </div>
         <!-- End nav -->
 
+        <!-- Start alert -->
+        <div class="bg-indigo-900 text-center py-4 lg:px-4">
+            <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+                role="alert">
+                <span class="flex rounded-full bg-indigo-500  px-2 py-1 text-xs font-bold mr-3">Hello!</span>
+                <a href="/contact.html" class=" hover:text-blue">
+                    <span class="font-semibold mr-2 text-left flex-auto">I am looking for a partner to help keep this maintained!</span>
+                </a>
+                <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg>
+            </div>
+        </div>
+        <!-- end alert -->
+
         <!-- Start Main -->
         <main class="container mx-auto md:px-16">
 
             <header class="pt-16 text-gray">
                 <div class="grid grid-cols-6">
                     <div class="float-left col-span-3">
-                        <h2 class="text-5xl font-extrabold">Library for <br> web developers</h2>
+                        <h2 id="title" class="text-5xl font-extrabold">Library for <br> web developers</h2>
                         <br>
                         <h3 class="text-3xl font-semibold">WebEd is the biggest library of tools for web developers.</h3>
                     </div>
@@ -204,13 +220,13 @@
 
             <div>
                 
-                <div>
-                    <h4 class="text-3xl font-bold py-6 text-gray">Most Popular</h4>
+                <div class="pb-3 px-40">
+                    <h4 class="bg-gray text-yogurt text-center text-3xl font-bold py-3 px-4 rounded-full ">Most Popular</h4>
                 </div>
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
                     <!-- cards go here -->
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative" data-tilt data-tilt-scale="2.1">
                         <img src="img/bootstrap-banner.jpg" alt="Bootstrap banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/bootstrap-icon.jpg" alt="Bootstrap Icon" class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
@@ -227,7 +243,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/tailwind-banner.jpg" alt="Tailwind banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/tailwind-icon.png" alt="Tailwind Icon"
@@ -246,7 +262,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/netlify-banner.png" alt="Netlify banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/netlify-icon.jpg" alt="Netlify icon"
@@ -264,7 +280,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
@@ -282,7 +298,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
@@ -301,7 +317,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
@@ -318,7 +334,7 @@
                                     class="fas fa-check p-1"></i> <!-- <span class="font-bold">Verified</span> --> </span>
                         </div>
                     </div>
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/trello-banner2.png" alt="CSSTricks banner" class="w-full h-28 sm:h-40 ">
                         <div class="m-4">
                             <!-- <img src="img/trello-icon.png" alt="CSSTricks Icon"
@@ -335,7 +351,7 @@
                                     class="fas fa-check p-1"></i> <!-- <span class="font-bold">Verified</span> --> </span>
                         </div>
                     </div>
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl text-gray-300 relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
                         <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
@@ -368,6 +384,5 @@
 
         </main>
     </div>
-
 </body>
 </html>

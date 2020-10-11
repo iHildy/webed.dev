@@ -19,6 +19,8 @@
   "homepage": "https://github.com/iHildy/webed.dev#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "tailwindcss": "^1.8.10"
+    "gsap": "^3.5.1",
+    "tailwindcss": "^1.8.10",
+    "vanilla-tilt": "^1.7.0"
   }
 }

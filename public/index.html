@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/86ebfd8f38.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="../src/vanilla-tilt.min.js"></script>
 </head>
 <body class="text-yogurt">
 
@@ -226,7 +226,7 @@
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
                     <!-- cards go here -->
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative" data-tilt data-tilt-scale="2.1">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative card" data-tilt data-tilt-reverse="true" data-tilt-axis="x">
                         <img src="img/bootstrap-banner.jpg" alt="Bootstrap banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/bootstrap-icon.jpg" alt="Bootstrap Icon" class="rounded-full -mt-16 w-24 rounded-t-full border-2 relative mb-4">
@@ -243,7 +243,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative card" data-tilt data-tilt-reverse="true" data-tilt-axis="x">
                         <img src="img/tailwind-banner.jpg" alt="Tailwind banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/tailwind-icon.png" alt="Tailwind Icon"
@@ -262,7 +262,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative card" data-tilt data-tilt-reverse="true" data-tilt-axis="x">
                         <img src="img/netlify-banner.png" alt="Netlify banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/netlify-icon.jpg" alt="Netlify icon"
@@ -280,7 +280,7 @@
                     </div>
 
 
-                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative">
+                    <div class="bg-gray rounded-xl overflow-hidden shadow-xl relative card" data-tilt data-tilt-reverse="true" data-tilt-axis="x">
                         <img src="img/csstricks-banner.jpg" alt="CSSTricks banner" class="w-full h-28 sm:h-40 object-cover banner">
                         <div class="m-4">
                             <img src="img/csstricks-icon.jpg" alt="CSSTricks Icon"
@@ -384,5 +384,14 @@
 
         </main>
     </div>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".card"));
+</script>
 </body>
 </html>

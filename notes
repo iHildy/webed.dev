@@ -3,6 +3,7 @@ Other Text color = #e2e8f0
 Accent color = #00b0ff
 
 To-do:
+Make all cards hover when mouse over like summit, remove tilt
 Add toasts to language icons
 replace icons with words on mobile
 have verified icon expand to say "{checkmark} icon"
@@ -21,4 +22,6 @@ Maybe: HTML,
 
 Recources: Misc, Hosting, ADS, Generators, Formaters, IDE, Code sandboxes, api, Conversions, Accessablily
 
-tilt.js: Scale on hover
+Add:
+https://greensock.com/docs/
+https://greensock.com/docs/v3/Plugins/TextPlugin
